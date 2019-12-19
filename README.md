@@ -1,6 +1,6 @@
 # ScheduleMailTopNews
 一、前言：  
-本代码片段的主要作用是用jsoup每小时分别读取下面四个站点的top新闻标题并将排名变更：  
+本代码片段的主要作用是用jsoup每小时分别读取下面四个站点的top新闻标题并将排名变更邮件发出：  
 （1）http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513  
 （2）https://s.weibo.com/top/summary?cate=realtimehot  
 （3）https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen  
