@@ -14,15 +14,16 @@
 现在，部署本代码后，以上问题全部解决，你手机只需要装个qq邮箱每小时收邮件看新闻就好了。  
 
 二、使用方法：  
-（一）执行src/main/resources/tools.sql 初始化数据库表结构  
+（一）执行src/main/resources/tools.sql 初始化数据库表结构。  
 （二）修改src/main/resources/application.properties：  
 （1）spring.datasource.url spring.datasource.username spring.datasource.password mysql数据库连接相关
 （2）logging.path 日志路径
 （3）yu.tools.email.sendEmail yu.tools.email.pwd spring.mail.username spring.mail.password  
-强烈建议yu.tools.email.sendEmail = spring.mail.username yu.tools.email.pwd=spring.mail.password 用outlook邮箱自己发给自己  
+强烈建议yu.tools.email.sendEmail = spring.mail.username yu.tools.email.pwd=spring.mail.password  
+并使用用outlook邮箱，自己发给自己邮件。   
 （然后outlook邮箱可能会多次验证你是不是机器人，如果有一天发现邮件不发了，用网页版登录outlook验证下就好了）  
-（三）编译打包jar，并找个服务器上传  
-（五）每小时收邮件就好了。
+（三）编译打包jar，并找个服务器上传。  
+（五）每小时收邮件就好了，第一个小时不会有邮件，第二个小时开始会发这小时和上个小时的对比邮件。
 
 三、效果展示：  
-（待补充）
+（待补充，图片准备中）
