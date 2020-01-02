@@ -22,8 +22,6 @@
 强烈建议yu.tools.email.sendEmail = spring.mail.username yu.tools.email.pwd=spring.mail.password  
 并使用用outlook邮箱。两对字段都设置成一样的含义是：自己发给自己邮件。  
 （然后outlook邮箱可能会多次验证你是不是机器人，如果有一天发现邮件不发了，用网页版登录outlook验证下就好了）  
-（三）编译打包jar，并找个服务器上传。  
-（五）每小时收邮件就好了，第一个小时不会有邮件，第二个小时开始会发这小时和上个小时的对比邮件。
-
-三、效果展示：  
-（待补充，图片准备中）
+（三）编译打包jar，并找个服务器上传  
+（nohup java -server -Djava.compiler=NONE -Xms256M -Xmx512M -jar ScheduleMailTopNews-1.0-SNAPSHOT.jar&）  
+（五）每小时收邮件就好了，第一个小时不会有邮件，第二个小时开始会发这小时和上个小时的对比邮件。  
