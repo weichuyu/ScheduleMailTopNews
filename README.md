@@ -15,6 +15,8 @@
 
 二、使用方法：  
 （一）执行src/main/resources/tools.sql 初始化数据库表结构。  
+ ![image](https://github.com/weichuyu/ScheduleMailTopNews/blob/master/sample/img/tables.PNG)  
+ 
 （二）修改src/main/resources/application.properties：  
 （1）spring.datasource.url spring.datasource.username spring.datasource.password mysql数据库连接相关  
 （2）logging.path 日志路径  
@@ -22,6 +24,10 @@
 强烈建议yu.tools.email.sendEmail = spring.mail.username yu.tools.email.pwd=spring.mail.password  
 并使用用outlook邮箱。两对字段都设置成一样的含义是：自己发给自己邮件。  
 （然后outlook邮箱可能会多次验证你是不是机器人，如果有一天发现邮件不发了，用网页版登录outlook验证下就好了）  
+ ![image](https://github.com/weichuyu/ScheduleMailTopNews/blob/master/sample/img/sql.PNG)  
+ ![image](https://github.com/weichuyu/ScheduleMailTopNews/blob/master/sample/img/mail.PNG)  
+ 
 （三）编译打包jar，并找个服务器上传  
 （nohup java -server -Djava.compiler=NONE -Xms256M -Xmx512M -jar ScheduleMailTopNews-1.0-SNAPSHOT.jar&）  
 （五）每小时收邮件就好了，第一个小时不会有邮件，第二个小时开始会发这小时和上个小时的对比邮件。  
+ ![image](https://github.com/weichuyu/ScheduleMailTopNews/blob/master/sample/img/result.PNG)  
